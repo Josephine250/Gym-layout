@@ -47,6 +47,35 @@
 
         <!-- Main Content Wrapper -->
         <main class="flex-1 overflow-y-auto p-4 md:p-8">
+            <!-- TASK 2: Responsive Navbar with Hamburger Menu -->
+            <nav class="max-w-7xl mx-auto flex items-center justify-between bg-white border border-slate-200 px-6 py-4 rounded-xl shadow-sm mb-12">
+                <!-- Logo -->
+                <a href="#" class="text-xl font-extrabold tracking-tight text-slate-900">
+                    Layout<span class="text-blue-600">Gym</span>
+                </a>
+
+                <!-- Navigation Links (Visible from md up) -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Services</a>
+                    <a href="#" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+
+                <!-- Right Action & Mobile Hamburger Button -->
+                <div class="flex items-center gap-4">
+                    <button class="bg-blue-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-all hover:bg-blue-700 cursor-pointer">
+                        Sign up
+                    </button>
+                    
+                    <!-- Hamburger button (Visible below md) -->
+                    <button class="md:hidden p-2 text-slate-700 hover:text-blue-600 focus:outline-none cursor-pointer" aria-label="Open menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
  
             <!-- TASK 1: Responsive Card Grid (8 Product Cards) -->
             <section class="max-w-7xl mx-auto mb-16 bg-white p-6 sm:p-8 lg:p-12 rounded-2xl shadow-sm border border-slate-200">
